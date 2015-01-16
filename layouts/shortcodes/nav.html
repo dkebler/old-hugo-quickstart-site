@@ -1,0 +1,44 @@
+  <div class="row">
+  <div class="four columns centered">
+	<ul class="nav-bar">
+  {{ with .GetParam "prev" }}
+   <li><a class="unavailable" href="{{.}}">Prev</a></li>
+      {{ end }}    
+  {{ with .GetParam "next" }}
+    <li><a class="unavailable" href="{{.}}">Next</a></li>
+      {{ end }}    
+  </ul>
+  </div>
+  </div>    
+
+  <div class="row">
+<div class="panel">  
+<div class="medium-3 small-centered columns">
+
+<div class="icon-bar three-up">
+   {{ with .GetParam "home" }}
+
+   
+  {{ end }} 
+   <a class="item">
+    <i class="step fi-home size-12"></i>
+    <label>Home</label>
+
+   <li><a class="unavailable" href="{{.}}">Prev</a></li>
+       
+  {{ with .GetParam "next" }}
+
+
+  </a><a class="item">
+    <i class="step fi-arrow-left size-12"></i>
+    <label>Prev</label>
+  </a>
+  <a class="item">
+    <i class="step fi-arrow-right size-12"></i>
+    <label>Next</label>
+  </a>
+</div>
+
+</div>
+</div>
+</div>

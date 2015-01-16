@@ -1,3 +1,7 @@
 baseurl = "http://yourSiteHere"
 languageCode = "en-us"
 title = "my new hugo site"
+[[menu.footer]]
+    name = "about hugo"
+    weight = -110
+    identifier = "about"
