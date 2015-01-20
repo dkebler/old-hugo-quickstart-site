@@ -1,7 +1,11 @@
 baseurl = "http://yourSiteHere"
 languageCode = "en-us"
-title = "my new hugo site"
+title = "A Hugo Foundation Template"
+[[menu.main]]
+    name = "test"
+    weight = -110
+    identifier = "test item"
 [[menu.footer]]
-    name = "about hugo"
+    name = "about this site"
     weight = -110
     identifier = "about"

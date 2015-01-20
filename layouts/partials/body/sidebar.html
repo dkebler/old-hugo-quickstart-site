@@ -1,7 +1,5 @@
-<div class="sidebar pure-u-1 pure-u-md-1-4">
-  <div class="header">
-    {{ partial "sidebarheader.html" . }}
-
+<div class="large-3 pull-9 columns">
+  <div class="sidebar">
     {{ if .Site.Params.sidebartitle }}<h1 class="brand-title">{{ .Site.Params.sidebartitle }}</h1>{{ end }}
     {{ if .Site.Params.sidebartagline }}<h2 class="brand-tagline">{{ .Site.Params.sidebartagline }}</h2>{{ end }}
 
@@ -27,3 +25,4 @@
 
   </div>
 </div>
+

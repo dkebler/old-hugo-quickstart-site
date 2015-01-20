@@ -1,11 +1,21 @@
-{{ partial "head.html" . }}
-
 <body>
 
-{{ partial "body/header.html" . }}
+<div class="page">
 
-{{ partial "body/head.html" . }}
+	{{ partial "body/header.html" . }}
 
-{{ partial "body/framework.html" . }}
+		<div class="row main">
+
+			{{ partial "body/content.html" . }}
+
+			{{ partial "body/sidebar.html" . }}
+
+		</div>
+
+	{{ partial "body/footer.html" . }}
+
+	{{ partial "body/framework.html" . }}
+
+</div>
 
 </body>
