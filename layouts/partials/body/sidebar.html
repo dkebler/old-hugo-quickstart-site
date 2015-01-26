@@ -12,11 +12,20 @@
       </ul>
     </nav>
 
+<!--         {{ range .Site.Sections }}
+          <li><p>Some URL</p></li>
+          {{ end }} -->
+
+    {{ partial "body/socialsharing.html" . }}      
+
+    <p>some text</p>
+
+
     {{ if .Site.Menus.social }}
     <div class="social-buttons">
       {{ range .Site.Menus.social }}
         {{ if .Url }}
-        <a href="{{ .Url }}" target="_blank">{{ .Pre }}</a>
+        <a href="{{ .Url }}" target="_blank">Icon{{ .Pre }}</a>
         {{ end }}
       {{ end }}
       

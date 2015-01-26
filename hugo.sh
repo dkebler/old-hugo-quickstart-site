@@ -1,5 +1,5 @@
 #!/bin/bash
 pwd
 # subl test.sublime-project
-hugo server --buildDrafts --watch
+hugoc server --buildDrafts --watch
 
