@@ -1,0 +1,14 @@
+{
+  "name": "hugo-foundation-compass-app",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  },
+     "install" : {
+    "path" : {
+      "css": "../static/framework/css",
+      "js": "../static/framework/js"
+    	}
+    }	
+}
