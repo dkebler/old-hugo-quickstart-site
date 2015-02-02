@@ -1,10 +1,21 @@
-/* Load Pallete */
-@import "palette";
-
-/* bring in defaults including foundation */
+/***********************/
+/* Load plugin scss stylesheets */
 @import "framework";
+/* https://github.com/at-import/modular-scale,  http://gakimball.github.io/responsive-modular-scale/ */
+@import "modular-scale"; 
+/* https://github.com/heygrady/scss-blend-modes  */
+@import "blend-modes"; 
+/* https://github.com/at-import/color-schemer */
+@import "color-schemer"; 
+/* compass */
+@import "compass";
 
-/* Import Custom Settings */
-@import "custom";
+/***************************/
+
+/*  Site Specific Settings */
+@import "new-palette";
+
+/* Site SpeSettings */
+/* @import "custom";
 
 /* End Custom Settings */

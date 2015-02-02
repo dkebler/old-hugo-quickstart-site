@@ -1,0 +1,287 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"build_system": "Packages/User/hugo.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"hugo",
+			"shell",
+			"bash",
+			"BASH",
+			"bash",
+			"Bash",
+			"bash",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/mnt/AllData/DGK/hacking/hugosites/testsite/testsite.sublime-project",
+		"/home/david/.local/share/nemo/actions/sudoterminal.sh",
+		"/mnt/AllData/DGK/websites/hackingnotes/hackingnotes.sublime-project",
+		"/tmp/rsub-55xxvu/.bash_aliases",
+		"/tmp/rsub-ypbs9w/hello.rb",
+		"/tmp/rsub-7bjuq9/.bashrc",
+		"/tmp/rsub-d0tv84/.bashrc",
+		"/tmp/rsub-9wadv3/.bashrc",
+		"/tmp/rsub-sevp_e/.bash_aliases",
+		"/tmp/rsub-37z_yd/.bash_aliases",
+		"/tmp/rsub-fourgc/.bash_aliases",
+		"/tmp/rsub-lo8x_0/hosts",
+		"/tmp/rsub-rcry1f/hostname",
+		"/tmp/rsub-9nrovo/.bash_aliases",
+		"/tmp/rsub-a0gp9g/.bashrc",
+		"/home/david/websites/hackingnotes/navigation.md",
+		"/home/david/websites/hackingnotes/vm.md",
+		"/home/david/websites/hackingnotes/sendy.md",
+		"/home/david/websites/hackingnotes/sublime.md",
+		"/home/david/websites/hackingnotes/linux-packages.md",
+		"/tmp/rsub-qg5lml/.bashrc",
+		"/tmp/rsub-mtpskd/.bash_alias",
+		"/tmp/rsub-sdjl03/.bash_aliases",
+		"/tmp/rsub-q2t8w0/.bash_aliases",
+		"/tmp/rsub-lm4v7x/.bash_alias",
+		"/tmp/rsub-o29374/.bashrc",
+		"/tmp/rsub-w156hj/test",
+		"/tmp/rsub-d8g8mv/.bash_aliases",
+		"/tmp/rsub-2f1jb4/.bashrc",
+		"/tmp/rsub-gbsg4c/examples",
+		"/tmp/rsub-n92xs8/sources.list",
+		"/tmp/rsub-b_g4n0/hosts",
+		"/tmp/rsub-0mnttd/hosts",
+		"/tmp/rsub-zuznl6/sshd_config",
+		"/tmp/rsub-h8m96l/sources.list",
+		"/tmp/rsub-qfij66/sshd_config",
+		"/tmp/rsub-0olu6d/hostname",
+		"/tmp/rsub-4mck32/hosts",
+		"/tmp/rsub-b7o5yf/hostname",
+		"/tmp/rsub-q40m03/hostname",
+		"/tmp/rsub-18f481/temp",
+		"/tmp/rsub-0t36ve/sshd_config",
+		"/tmp/rsub-vcwcsl/sshd_config",
+		"/tmp/rsub-v9mp3d/sshd_config",
+		"/tmp/rsub-z8okml/ssh_config",
+		"/tmp/rsub-m8h2tc/ssh_config",
+		"/tmp/rsub-bkjgo2/temp",
+		"/home/david/.ssh/config",
+		"/tmp/rsub-j9c1sz/.profile",
+		"/tmp/rsub-bnwpap/test",
+		"/home/david/.config/sublime-text-3/Packages/rsub/rsub.sublime-settings",
+		"/tmp/rsub-hgow7t/10-mail.conf",
+		"/tmp/rsub-h4kytf/10-master.conf",
+		"/tmp/rsub-euxu9q/10-ssl.conf",
+		"/tmp/rsub-0xxsr4/15-lda.conf",
+		"/tmp/rsub-cner9d/20-imap.conf",
+		"/tmp/rsub-hni_if/20-lmtp.conf",
+		"/tmp/rsub-j2ee3k/20-managesieve.conf",
+		"/tmp/rsub-q27zne/20-pop3.conf",
+		"/tmp/rsub-6wc__l/auth-sql.conf.ext",
+		"/tmp/rsub-agppx8/dovecot-sql.conf.ext",
+		"/tmp/rsub-ijfmmx/dovecot.conf",
+		"/tmp/rsub-h2eudg/10-auth.conf",
+		"/tmp/rsub-1ttrk6/dovecot-sql.conf.ext",
+		"/tmp/rsub-aha5_p/10-logging.conf",
+		"/tmp/rsub-oegi3j/webmin-setup.out",
+		"/home/david/.config/sublime-text-3/Packages/User/Markdown.sublime-settings",
+		"/home/david/AllData/HW/HW-Admin/Bulk-Email/emails/September-2014/September-2014.html",
+		"/home/david/scripts/hwhugow.e",
+		"/home/david/scripts/expect launch bash script",
+		"/home/david/scripts/hwhugow",
+		"/home/david/scripts/rootserver2",
+		"/home/david/websites/hackingnotes/index.html",
+		"/home/david/websites/hackingnotes/.htaccess",
+		"/home/david/websites/hackingnotes/linux-os.md",
+		"/home/david/scripts/rootserver",
+		"/home/david/.config/sublime-text-3/Packages/SideBarEnhancements/Default (Linux).sublime-keymap",
+		"/home/david/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/david/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/david/.config/sublime-text-3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/home/david/.config/sublime-text-3/Packages/MarkdownEditing/MultiMarkdown.sublime-settings",
+		"/home/david/.config/sublime-text-3/Packages/User/Markdown (Standard).sublime-settings",
+		"/home/david/.config/sublime-text-3/Packages/MarkdownEditing/README.md",
+		"/home/david/websites/hackingnotes/linux-servers.md",
+		"/home/david/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/david/websites/hackingnotes/index.md",
+		"/home/david/websites/hackingnotes/config.json",
+		"/home/david/.mozilla/firefox/profiles/dgk-personal/sessionstore.js",
+		"/home/david/websites/hackingnotes/hackingnotes.sublime-project",
+		"/home/david/websites/hackingnotes/subl-hackingnotes-project",
+		"/home/david/%F",
+		"/home/david/.sublime/hugo.sublime-project",
+		"/home/david/scripts/source gvm.sh",
+		"/home/david/scripts/doc-hugo.sh",
+		"/home/david/scripts/source rvm.sh",
+		"/home/david/.rvm/scripts/rvm",
+		"/home/david/scripts/source rvm ",
+		"/home/david/scripts/doc-hugo-watch",
+		"/home/david/scripts/doc-hugo-prompt",
+		"/home/david/scripts/dochugo.sh",
+		"/home/david/scripts/dochugo-prompt",
+		"/home/david/Desktop/Start Hugo Server for HW"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"diction",
+			"cntrl R",
+			"mark"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 154.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/.sublime/mdwiki.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"active"
+			]
+		],
+		"width": 404.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 480.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

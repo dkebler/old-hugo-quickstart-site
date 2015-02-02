@@ -1,5 +1,9 @@
 # Require any additional compass plugins here.
 add_import_path "packages/foundation/scss"
+add_import_path "packages/modular-scale/stylesheets"
+add_import_path "packages/scss-blend-modes/stylesheets"
+add_import_path "packages/color-schemer/stylesheets"
+
 
 
 # Set this to the root of your project when deployed:
@@ -11,6 +15,8 @@ javascripts_dir = "js"
 
 sourcemap = (environment == :production) ? false : true;
 output_style = (environment == :production) ? :compressed : :expanded
+
+disable_warnings = true;
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

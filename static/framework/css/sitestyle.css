@@ -1,5 +1,5 @@
-/* Load Pallete */
-/* bring in defaults including foundation */
+/***********************/
+/* Load plugin scss stylesheets */
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -7,7 +7,6 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 /* line 11, ../../../framework/scss/_normalize.scss */
 article,
 aside,
@@ -6648,9 +6647,9 @@ dialog[open] {
 
 /* line 131, ../../../framework/packages/foundation/scss/foundation/components/_tables.scss */
 table {
-  background: #CCE3FF;
+  background: #FFFFFF;
   margin-bottom: 1.25rem;
-  border: solid 0px #CCE3FF;
+  border: solid 1px #DDDDDD;
   table-layout: auto;
 }
 /* line 69, ../../../framework/packages/foundation/scss/foundation/components/_tables.scss */
@@ -6662,7 +6661,7 @@ table caption {
 }
 /* line 78, ../../../framework/packages/foundation/scss/foundation/components/_tables.scss */
 table thead {
-  background: #CCE3FF;
+  background: #F5F5F5;
 }
 /* line 82, ../../../framework/packages/foundation/scss/foundation/components/_tables.scss */
 table thead tr th,
@@ -6674,7 +6673,7 @@ table thead tr td {
 }
 /* line 92, ../../../framework/packages/foundation/scss/foundation/components/_tables.scss */
 table tfoot {
-  background: #CCE3FF;
+  background: #F5F5F5;
 }
 /* line 96, ../../../framework/packages/foundation/scss/foundation/components/_tables.scss */
 table tfoot tr th,
@@ -6694,7 +6693,7 @@ table tr td {
 }
 /* line 115, ../../../framework/packages/foundation/scss/foundation/components/_tables.scss */
 table tr.even, table tr.alt, table tr:nth-of-type(even) {
-  background: #CCE3FF;
+  background: #F9F9F9;
 }
 /* line 120, ../../../framework/packages/foundation/scss/foundation/components/_tables.scss */
 table thead tr th,
@@ -6970,7 +6969,7 @@ meta.foundation-mq-topbar {
 /* line 118, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
 .contain-to-grid {
   width: 100%;
-  background: #06284F;
+  background: #333333;
 }
 /* line 122, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
 .contain-to-grid .top-bar {
@@ -7010,7 +7009,7 @@ meta.foundation-mq-topbar {
   height: 2.8125rem;
   line-height: 2.8125rem;
   position: relative;
-  background: #06284F;
+  background: #333333;
   margin-bottom: 0;
 }
 /* line 161, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
@@ -7127,7 +7126,7 @@ meta.foundation-mq-topbar {
 }
 /* line 274, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .title-area {
-  background: #06284F;
+  background: #333333;
 }
 /* line 277, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .toggle-topbar a {
@@ -7157,7 +7156,7 @@ meta.foundation-mq-topbar {
 /* line 306, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-top: solid 1px #031428;
+  border-top: solid 1px #1a1a1a;
   clear: both;
   height: 1px;
   width: 100%;
@@ -7327,7 +7326,7 @@ meta.foundation-mq-topbar {
 /* line 352, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li:hover:not(.has-form) > a {
   background-color: #555555;
-  background: #5E81AA;
+  background: #333333;
   color: #FFFFFF;
 }
 /* line 361, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
@@ -7451,7 +7450,7 @@ meta.foundation-mq-topbar {
 @media only screen and (min-width: 40.063em) {
   /* line 455, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar {
-    background: #06284F;
+    background: #333333;
     overflow: visible;
   }
   /* line 172, ../../../framework/packages/foundation/scss/foundation/components/_global.scss */
@@ -7486,7 +7485,7 @@ meta.foundation-mq-topbar {
   }
   /* line 474, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar.expanded {
-    background: #06284F;
+    background: #333333;
   }
 
   /* line 477, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
@@ -7518,19 +7517,19 @@ meta.foundation-mq-topbar {
   /* line 500, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.hover > a:not(.button) {
     background-color: #555555;
-    background: #5E81AA;
+    background: #333333;
     color: #FFFFFF;
   }
   /* line 509, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 0.9375rem;
     line-height: 2.8125rem;
-    background: #06284F;
+    background: #333333;
   }
   /* line 513, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button):hover {
     background-color: #555555;
-    background: #5E81AA;
+    background: #333333;
   }
   /* line 522, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
@@ -7642,14 +7641,14 @@ meta.foundation-mq-topbar {
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
-    border-right: solid 1px #0a4282;
+    border-right: solid 1px #4e4e4e;
     clear: none;
     height: 2.8125rem;
     width: 0;
   }
   /* line 631, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-form {
-    background: #06284F;
+    background: #333333;
     padding: 0 0.9375rem;
     height: 2.8125rem;
   }
@@ -7675,7 +7674,7 @@ meta.foundation-mq-topbar {
   /* line 661, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:hover > a {
     background-color: #555555;
-    background: #5E81AA;
+    background: #333333;
     color: #FFFFFF;
   }
   /* line 670, ../../../framework/packages/foundation/scss/foundation/components/_top-bar.scss */
@@ -9466,244 +9465,216 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* Import Custom Settings */
-/*  see custom.scss */
-/* line 5, ../../../framework/scss/_custom.scss */
-.row {
-  max-width: 1200px;
-}
-
-/* line 9, ../../../framework/scss/_custom.scss */
+/* https://github.com/at-import/modular-scale,  http://gakimball.github.io/responsive-modular-scale/ */
+/* https://github.com/heygrady/scss-blend-modes  */
+/* https://github.com/at-import/color-schemer */
+/* compass */
+/***************************/
+/*  Site Specific Settings */
+/* line 14, ../../../framework/scss/_new-palette.scss */
 body {
-  color: white;
-  width: 100%;
-  /*  border-top:solid #d90006; */
-  border-width: 4px;
-  background-color: #275183;
-  color: black;
-}
-
-/* line 26, ../../../framework/scss/_custom.scss */
-.top-bar {
-  height: 45px;
-}
-
-/* line 30, ../../../framework/scss/_custom.scss */
-.header {
-  background-color: #5E81AA;
-  color: black;
-  padding: 5px;
-}
-
-/* line 36, ../../../framework/scss/_custom.scss */
-.panel {
-  background-color: #CCE3FF;
-  color: black;
-}
-
-/* line 41, ../../../framework/scss/_custom.scss */
-.postscript {
-  margin-top: 4em;
-  background-color: #FFE9C7;
-  color: black;
-  padding: 1em;
-}
-
-/* line 48, ../../../framework/scss/_custom.scss */
-.callout {
-  background-color: #FFE9C7;
-  color: black;
-  padding: 1em;
-}
-
-/* line 54, ../../../framework/scss/_custom.scss */
-.english p {
-  background-color: #58AA94;
-  padding: 1em;
-}
-
-/* line 59, ../../../framework/scss/_custom.scss */
-.english.current p {
-  background-color: red;
+  background: #2961a3;
   color: white;
 }
 
-/* line 67, ../../../framework/scss/_custom.scss */
-html {
-  font-size: 100%;
+/* line 14, ../../../framework/scss/_new-palette.scss */
+.sidebar {
+  background: #3329a3;
+  color: white;
 }
 
-/* line 68, ../../../framework/scss/_custom.scss */
-body {
-  font-size: 1em;
-}
-
-/* line 75, ../../../framework/scss/_custom.scss */
-body, h1, h2, h3, h4, h5, h6, p {
-  font-family: "Helvetica Neue", helvetica, "Open Sans", sans-serif;
+/* line 14, ../../../framework/scss/_new-palette.scss */
+.content {
+  background: #29a380;
   color: black;
 }
 
-/* line 89, ../../../framework/scss/_custom.scss */
-h1, h2 {
-  font-size: 2.64em;
-  font-weight: 700;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.primary {
+  background: #2961a3;
+  color: white;
 }
 
-/* line 94, ../../../framework/scss/_custom.scss */
-h3, h4 {
-  font-size: 1.8em;
-  font-weight: 600;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.primary-l {
+  background: #5380b5;
+  color: white;
 }
 
-/* line 99, ../../../framework/scss/_custom.scss */
-body, p {
-  font-size: 1.2em;
-  font-weight: 400;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.primary-ll {
+  background: #7ea0c7;
+  color: black;
 }
 
-@media only screen and (max-width: 40em) {
-  /* line 108, ../../../framework/scss/_custom.scss */
-  h1, h2 {
-    font-size: 2em;
-    font-weight: 700;
-  }
-
-  /* line 113, ../../../framework/scss/_custom.scss */
-  h3, h4 {
-    font-size: 1.5em;
-    font-weight: 600;
-  }
-
-  /* line 118, ../../../framework/scss/_custom.scss */
-  body, p {
-    font-size: 1em;
-    font-weight: 400;
-  }
-}
-/* line 126, ../../../framework/scss/_custom.scss */
-h1, h3 {
-  text-transform: uppercase;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.primary-lll {
+  background: #a9bfda;
+  color: black;
 }
 
-/* line 131, ../../../framework/scss/_custom.scss */
-h1 a, h2 a, h3 a, h4 a {
-  color: #428fe0;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.primary-d {
+  background: #204d82;
+  color: white;
 }
 
-/* line 136, ../../../framework/scss/_custom.scss */
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
-  color: #29598c;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.primary-dd {
+  background: #183a61;
+  color: white;
 }
 
-/* line 142, ../../../framework/scss/_custom.scss */
-hr {
-  border-top-width: 5px;
-  border-top-color: #794A00;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.primary-ddd {
+  background: #102641;
+  color: white;
 }
 
-/* line 151, ../../../framework/scss/_custom.scss */
-figure {
-  display: table;
-  padding: 0;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.secondary {
+  background: #3329a3;
+  color: white;
 }
 
-/* line 157, ../../../framework/scss/_custom.scss */
-figure img {
-  width: 100%;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.secondary-l {
+  background: #5b53b5;
+  color: white;
 }
 
-/* line 162, ../../../framework/scss/_custom.scss */
-.imagebreak {
-  clear: both;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.secondary-ll {
+  background: #847ec7;
+  color: black;
 }
 
-/* line 166, ../../../framework/scss/_custom.scss */
-figure.left {
-  padding: 0 1em 0 0;
-  margin: 0;
-  max-width: 49%;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.secondary-lll {
+  background: #ada9da;
+  color: black;
 }
 
-/* line 174, ../../../framework/scss/_custom.scss */
-figure.right {
-  max-width: 49%;
-  padding: 0 0 0 1em;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.secondary-d {
+  background: #282082;
+  color: white;
 }
 
-/* line 180, ../../../framework/scss/_custom.scss */
-figure.center {
-  max-width: 66%;
-  margin-left: 17%;
-  margin-right: 17%;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.secondary-dd {
+  background: #1e1861;
+  color: white;
 }
 
-/* line 186, ../../../framework/scss/_custom.scss */
-figure.multi {
-  float: left;
-  margin: 0 5% 0 5%;
-  max-width: 40%;
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.secondary-ddd {
+  background: #141041;
+  color: white;
 }
 
-@media only screen and (max-width: 40em) {
-  /* line 194, ../../../framework/scss/_custom.scss */
-  figure.center, figure.right, figure.left, figure.multi {
-    float: none;
-    max-width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.tertiary {
+  background: #29a380;
+  color: black;
 }
-/* line 205, ../../../framework/scss/_custom.scss */
-figcaption {
-  display: table-caption;
-  caption-side: bottom;
-  padding: 0 0.5em 0 0.5em;
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.tertiary-l {
+  background: #53b599;
+  color: black;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.tertiary-ll {
+  background: #7ec7b2;
+  color: black;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.tertiary-lll {
+  background: #a9dacc;
+  color: black;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.tertiary-d {
+  background: #208266;
+  color: white;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.tertiary-dd {
+  background: #18614c;
+  color: white;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.tertiary-ddd {
+  background: #104133;
+  color: white;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.quadrary {
+  background: #a37329;
+  color: black;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.quadrary-l {
+  background: #b58f53;
+  color: black;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.quadrary-ll {
+  background: #c7ab7e;
+  color: black;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.quadrary-lll {
+  background: #dac7a9;
+  color: black;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.quadrary-d {
+  background: #825c20;
+  color: white;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.quadrary-dd {
+  background: #614518;
+  color: white;
+}
+
+/* line 3, ../../../framework/scss/_new-palette.scss */
+.quadrary-ddd {
+  background: #412e10;
+  color: white;
+}
+
+/* line 86, ../../../framework/scss/_new-palette.scss */
+.box {
+  display: inline-block;
+  width: 800px;
+  margin: 10px 0 0 0;
+}
+
+/* line 92, ../../../framework/scss/_new-palette.scss */
+.box-small {
+  display: inline-block;
   text-align: center;
+  width: 100px;
+  padding: 0 20 0 20;
+  height: 40px;
 }
 
-/* line 213, ../../../framework/scss/_custom.scss */
-figcaption p {
-  margin-bottom: 0px;
-  font-size: 1em;
-  font-weight: 600;
-  font-style: italic;
-}
-
-/* line 220, ../../../framework/scss/_custom.scss */
-.clear {
-  clear: both;
-}
-
-/* line 223, ../../../framework/scss/_custom.scss */
-.left {
-  float: !important;
-}
-
-/* line 229, ../../../framework/scss/_custom.scss */
-.photodoc p {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-/* line 237, ../../../framework/scss/_custom.scss */
-div.icon-bar > * {
-  font-size: 1rem;
-  padding: 0rem;
-}
-
-/* line 242, ../../../framework/scss/_custom.scss */
-#page.top-bar {
-  background: white;
-}
-
-/* line 246, ../../../framework/scss/_custom.scss */
-#credits p {
-  margin-bottom: 0px;
-  font-size: .75rem;
-  font-style: italic;
-}
+/* Site SpeSettings */
+/* @import "custom";
 
 /* End Custom Settings */
 

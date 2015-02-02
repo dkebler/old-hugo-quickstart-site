@@ -1,0 +1,34 @@
+
+// Set default colors for website based on pallete.scss 
+// The base colors set are $primary, $secondary, $tertiary, $quadrary 
+
+
+$body-color: $color-primary-0;
+$default-textcolor: black; //default text color for all text
+$default-color: $color-primary-1;  // default background color for all content
+$fig-bd-color: $color-secondary-2-4;   // border around figures
+$fig-caption-color:$color-secondary-2-1; // background for caption
+$border-color: $color-complement-4;
+$header-bg-color:$color-primary-2;
+
+
+//Navigation
+
+$topbar-bg-color: $color-primary-4;  // background color for top navigation
+$topbar-link-bg-hover:$color-primary-2;   //hover color for menu
+
+
+// Follow are inhertied colors from elements above
+// can set these directly if desired
+$body-textcolor:$default-textcolor;
+
+// These control the background color for the table and even rows
+$table-bg: $default-color;
+$table-even-row-bg: $table-bg;
+
+// These control the table cell border style
+$table-border-size: 0px;
+$table-border-color: $table-bg;
+
+// These control the table head styles
+$table-head-bg: $table-bg;
