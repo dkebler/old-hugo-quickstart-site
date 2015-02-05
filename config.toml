@@ -1,6 +1,11 @@
 baseurl = "http://localhost:1313"
 languageCode = "en-us"
-title = "A Hugo Foundation Starter"
+title = "A Hugo, Sass and Zurb-Foundation Starter Site"
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+  food-group = "food-groups"
 [[menu.footer]]
     name = "about this site"
     weight = -110

@@ -3,6 +3,7 @@ add_import_path "packages/foundation/scss"
 add_import_path "packages/modular-scale/stylesheets"
 add_import_path "packages/scss-blend-modes/stylesheets"
 add_import_path "packages/color-schemer/stylesheets"
+add_import_path "packages/normalize.scss"
 
 
 

@@ -1,7 +1,7 @@
 +++
 Categories = ["default"]
 Description = ""
-Tags = ["xx", "yy"]
+Tags = ["Meat", "Vegetables", "Fruits", "Cerals", "Confections", "Dairy"]
 date = "2015-01-16T09:59:35-08:00"
 title = "Test Home Page"
 +++

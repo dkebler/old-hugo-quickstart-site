@@ -1,13 +1,5 @@
-// Global Foundation Settings
-@import "settings";
-
-// Comment out this import if you don't want to use normalize
-@import "normalize";
-
-// Comment out this import if you are customizing your imports below
-@import "foundation";
-
-// Import specific parts of Foundation by commenting the import "foundation"
+// Import specific parts of Foundation by commenting the import "foundation in sitestyle.scss"
+// Uncommenting the @import "vendors/foundation-custom";
 // and uncommenting what you want below. You must uncomment the following if customizing
 
 // @import "foundation/components/global"; // *always required
