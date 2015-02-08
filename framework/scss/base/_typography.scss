@@ -1,0 +1,4 @@
+$ms-base: 1em;
+$ms-ratio: $golden;
+$debug-list: join($debug-list, '---LOCATION-base/_typography.scss:4'); 
+$debug-list: join($debug-list, (modular-size-list ms-list(0, 5, $ms-base, $ms-ratio)));

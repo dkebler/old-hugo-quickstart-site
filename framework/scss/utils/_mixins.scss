@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+// COLOR
+///set a background and text color as a style
+@mixin cs-style($ord-color,$color){
+  .#{$ord-color} {
+    background:$color;
+    @if cs-is-dark($color) == true
+      {color:white;}
+    @else 
+      { color:black;}
+    }
+  }
+
+  ///set a background and text color  $type is "",.,# 
+@mixin cs-select-style($selector-name,$type,$color){
+  #{$type}#{$selector-name} {
+    background:$color;
+    @if cs-is-dark($color) == true
+      {color:white;}
+    @else 
+      { color:black;}
+    }
+  }

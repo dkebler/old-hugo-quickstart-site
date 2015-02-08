@@ -1,0 +1,145 @@
+///set a background and text color as a style
+@mixin cs-style($ord-color,$color){
+  .#{$ord-color} {
+    background:$color;
+    @if cs-is-dark($color) == true
+      {color:white;}
+    @else 
+      { color:black;}
+    }
+  }
+
+  ///set a background and text color  $type is "",.,# 
+@mixin cs-select-style($selector-name,$type,$color){
+  #{$type}#{$selector-name} {
+    background:$color;
+    @if cs-is-dark($color) == true
+      {color:white;}
+    @else 
+      { color:black;}
+    }
+  }
+  
+
+
+// Pick a color for your scheme:  see paletton.com
+$picked-color: #275183;
+// Adjust sat/lightness of the hue of picked color
+$cs-primary: hsl(hue($picked-color), 60%, 40% );
+// Select your scheme from the list 
+$cs-scheme: accented-analogic; // mono, complement, triad, tetrad, analogic, accented-analogic
+// How distant do you want the hue offset to be:
+$cs-hue-offset: 30;
+// How distant do you want tints and shades to be from their base:
+$cs-brightness-offset: 0;
+$cs-color-model: ryb; // rgb, ryb
+
+//  Generate set of your four main colors based on the settings above
+$primary : cs-primary();
+$secondary : cs-secondary();
+$tertiary : cs-tertiary();
+$quadrary : cs-quadrary();
+
+$ts-offset: 20%;  //increment amount to shift tint or shade of a color 
+
+// Set the main html element colors
+@include cs-select-style(body,"",cs-primary());
+@include cs-select-style(sidebar,".",cs-secondary());
+@include cs-select-style(content,".",cs-tertiary());
+
+
+
+
+@include cs-style(primary,cs-primary());
+@include cs-style(primary-l,tint(cs-primary(),$ts-offset)); 
+@include cs-style(primary-ll,tint(cs-primary(),$ts-offset*2)); 
+@include cs-style(primary-lll,tint(cs-primary(),$ts-offset*3)); 
+@include cs-style(primary-d,shade(cs-primary(),$ts-offset)); 
+@include cs-style(primary-dd,shade(cs-primary(),$ts-offset*2)); 
+@include cs-style(primary-ddd,shade(cs-primary(),$ts-offset*3));
+
+@include cs-style(secondary,cs-secondary());
+@include cs-style(secondary-l,tint(cs-secondary(),$ts-offset)); 
+@include cs-style(secondary-ll,tint(cs-secondary(),$ts-offset*2)); 
+@include cs-style(secondary-lll,tint(cs-secondary(),$ts-offset*3)); 
+@include cs-style(secondary-d,shade(cs-secondary(),$ts-offset)); 
+@include cs-style(secondary-dd,shade(cs-secondary(),$ts-offset*2)); 
+@include cs-style(secondary-ddd,shade(cs-secondary(),$ts-offset*3));
+
+@include cs-style(tertiary,cs-tertiary());
+@include cs-style(tertiary-l,tint(cs-tertiary(),$ts-offset)); 
+@include cs-style(tertiary-ll,tint(cs-tertiary(),$ts-offset*2)); 
+@include cs-style(tertiary-lll,tint(cs-tertiary(),$ts-offset*3)); 
+@include cs-style(tertiary-d,shade(cs-tertiary(),$ts-offset)); 
+@include cs-style(tertiary-dd,shade(cs-tertiary(),$ts-offset*2)); 
+@include cs-style(tertiary-ddd,shade(cs-tertiary(),$ts-offset*3));
+
+@include cs-style(quadrary,cs-quadrary());
+@include cs-style(quadrary-l,tint(cs-quadrary(),$ts-offset)); 
+@include cs-style(quadrary-ll,tint(cs-quadrary(),$ts-offset*2)); 
+@include cs-style(quadrary-lll,tint(cs-quadrary(),$ts-offset*3)); 
+@include cs-style(quadrary-d,shade(cs-quadrary(),$ts-offset)); 
+@include cs-style(quadrary-dd,shade(cs-quadrary(),$ts-offset*2)); 
+@include cs-style(quadrary-ddd,shade(cs-quadrary(),$ts-offset*3));
+
+
+.box {
+  display: inline-block;
+  width: 800px;
+  margin: 10px 0 0 0;
+} 
+
+.box-small {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  padding: 0 20 0 20;
+  height: 40px;
+}
+
+
+
+///HTML to make a viewable palette
+// <h1>Color Schemer Generated Palette</h1>
+// <div class="box">
+//   <div class="box-small primary-ddd">Darkest</div>
+//   <div class="box-small primary-dd">Darker</div>
+//   <div class="box-small primary-d">Dark</div>
+//   <div class="box-small primary">Primary</div>
+//   <div class="box-small primary-l">Light</div>
+//   <div class="box-small primary-ll">Lighter</div>
+//   <div class="box-small primary-lll">Lightest</div>
+// </div> 
+// <div class="box">
+//   <div class="box-small secondary-ddd">Darkest</div>
+//   <div class="box-small secondary-dd">Darker</div>
+//   <div class="box-small secondary-d">Dark</div>
+//   <div class="box-small secondary">Secondary</div>
+//   <div class="box-small secondary-l">Light</div>
+//   <div class="box-small secondary-ll">Lighter</div>
+//   <div class="box-small secondary-lll">Lightest</div>
+// </div>
+ 
+// <div class="box">
+//   <div class="box-small tertiary-ddd">Darkest</div>
+//   <div class="box-small tertiary-dd">Darker</div>
+//   <div class="box-small tertiary-d">Dark</div>
+//   <div class="box-small tertiary">tertiary</div>
+//   <div class="box-small tertiary-l">Light</div>
+//   <div class="box-small tertiary-ll">Lighter</div>
+//   <div class="box-small tertiary-lll">Lightest</div>
+// </div> 
+
+// <div class="box">
+//   <div class="box-small quadrary-ddd">Darkest</div>
+//   <div class="box-small quadrary-dd">Darker</div>
+//   <div class="box-small quadrary-d">Dark</div>
+//   <div class="box-small quadrary">quadrary</div>
+//   <div class="box-small quadrary-l">Light</div>
+//   <div class="box-small quadrary-ll">Lighter</div>
+//   <div class="box-small quadrary-lll">Lightest</div>
+// </div> 
+
+
+
+

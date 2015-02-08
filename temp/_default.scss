@@ -1,0 +1,72 @@
+///set a background and text color as a style
+@mixin cs-style($ord-color,$color){
+  .#{$ord-color} {
+    background:$color;
+    @if cs-is-dark($color) == true
+      {color:white;}
+    @else 
+      { color:black;}
+    }
+  }
+
+  ///set a background and text color  $type is "",.,# 
+@mixin cs-select-style($selector-name,$type,$color){
+  #{$type}#{$selector-name} {
+    background:$color;
+    @if cs-is-dark($color) == true
+      {color:white;}
+    @else 
+      { color:black;}
+    }
+  }
+  
+
+
+
+
+
+
+///HTML to make a viewable palette
+// <h1>Color Schemer Generated Palette</h1>
+// <div class="box">
+//   <div class="box-small primary-ddd">Darkest</div>
+//   <div class="box-small primary-dd">Darker</div>
+//   <div class="box-small primary-d">Dark</div>
+//   <div class="box-small primary">Primary</div>
+//   <div class="box-small primary-l">Light</div>
+//   <div class="box-small primary-ll">Lighter</div>
+//   <div class="box-small primary-lll">Lightest</div>
+// </div> 
+// <div class="box">
+//   <div class="box-small secondary-ddd">Darkest</div>
+//   <div class="box-small secondary-dd">Darker</div>
+//   <div class="box-small secondary-d">Dark</div>
+//   <div class="box-small secondary">Secondary</div>
+//   <div class="box-small secondary-l">Light</div>
+//   <div class="box-small secondary-ll">Lighter</div>
+//   <div class="box-small secondary-lll">Lightest</div>
+// </div>
+ 
+// <div class="box">
+//   <div class="box-small tertiary-ddd">Darkest</div>
+//   <div class="box-small tertiary-dd">Darker</div>
+//   <div class="box-small tertiary-d">Dark</div>
+//   <div class="box-small tertiary">tertiary</div>
+//   <div class="box-small tertiary-l">Light</div>
+//   <div class="box-small tertiary-ll">Lighter</div>
+//   <div class="box-small tertiary-lll">Lightest</div>
+// </div> 
+
+// <div class="box">
+//   <div class="box-small quadrary-ddd">Darkest</div>
+//   <div class="box-small quadrary-dd">Darker</div>
+//   <div class="box-small quadrary-d">Dark</div>
+//   <div class="box-small quadrary">quadrary</div>
+//   <div class="box-small quadrary-l">Light</div>
+//   <div class="box-small quadrary-ll">Lighter</div>
+//   <div class="box-small quadrary-lll">Lightest</div>
+// </div> 
+
+
+
+

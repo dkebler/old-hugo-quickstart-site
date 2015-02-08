@@ -1,0 +1,40 @@
+{
+  "name": "sass-font-stacker",
+  "homepage": "https://github.com/synapticism/sass-font-stacker",
+  "authors": [
+    {
+      "name": "Alexander Synaptic",
+      "email": "alexander@synapticism.com",
+      "homepage": "http://synapticism.com"
+    }
+  ],
+  "main": "_font_stacker.scss",
+  "keywords": [
+    "sass",
+    "scss",
+    "font",
+    "fonts",
+    "fontstack",
+    "fontstacks",
+    "type",
+    "typography"
+  ],
+  "license": "MIT/GPLv3",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.1.2",
+  "_release": "0.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.2",
+    "commit": "d803f0bca1ebf7bd4c21d36120f188ce4cc70943"
+  },
+  "_source": "git://github.com/synapticism/sass-font-stacker.git",
+  "_target": "~0.1.2",
+  "_originalSource": "sass-font-stacker",
+  "_direct": true
+}

@@ -1,8 +1,10 @@
 /*************************/
 /*   This is the main scss file that pulls in all other sytlesheets into a single
 /*   site stytle sheet that can later be minified.
-/*
+/*   /framework /scss/sitesytle.scss 
 /*************************/
+/*  
+/*  VENDOR CUSTOM SETTINGS */
 /* LOAD VENDOR SCSS STYLESHEETS FROM BOWER INSTALLS */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -9488,11 +9490,11 @@ th.hide-for-touch {
 }
 /* https://github.com/at-import/modular-scale,  http://gakimball.github.io/responsive-modular-scale/ */
 /* https://github.com/heygrady/scss-blend-modes, not needed for color-schemer if not blending colors  */
-/* @import "blend-modes"; */
+/* @import 'blend-modes'; */
 /* https://github.com/at-import/color-schemer */
+/* https://github.com/synapticism/sass-font-stacker */
 /* compass - uncomment if you need any compass code */
 /* END - LOAD VENDOR SCSS STYLESHEETS */
-/*  VENDOR CUSTOM SETTINGS */
 /*  END - VENDOR CUSTOM SETTINGS */
 /* CUSTOM SASS CODES USED FOR THIS SITE.  */
 /* END - CUSTOM SASS CODES USED FOR THIS SITE.  */
@@ -9500,5 +9502,19 @@ th.hide-for-touch {
 /* END - BASE STYLING INCLUDING THE BASE(DEFAULT) THEME  */
 /* CUSTOM THEME OVERRIDE  */
 /* END - CUSTOM THEME OVERRIDE  */
+/* line 103, ../../../framework/scss/utils/_debug.scss */
+body:before {
+  content: "[\a     (string) DEBUG_ON-see-utils/_debug.scss,\a     (string) ---LOCATION-base/_typography.scss:4,\a     (string) modular-size-list,\a     (list: 6) [\a         (number) 1em,\a         (number) 1.61803em,\a         (number) 2.61803em,\a         (number) 4.23607em,\a         (number) 6.8541em,\a         (number) 11.09017em\a     ]\a]" !important;
+  display: block                            !important;
+  margin: 1em                               !important;
+  padding: .5em                             !important;
+  background: #5D0C1A !important;
+  color: white !important;
+  border: 1px solid #DDD                    !important;
+  border-radius: .2em                       !important;
+  font: 1em "Courier New", monospace !important;
+  text-shadow: 0 1px white                  !important;
+  white-space: pre-wrap                     !important;
+}
 
 /*# sourceMappingURL=sitestyle.css.map */

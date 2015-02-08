@@ -1,45 +1,21 @@
 /*************************/
 /*   This is the main scss file that pulls in all other sytlesheets into a single
 /*   site stytle sheet that can later be minified.
-/*
+/*   /framework /scss/sitesytle.scss 
 /*************************/
 
-/* LOAD VENDOR SCSS STYLESHEETS FROM BOWER INSTALLS */
-
-// Comment out this import if you don't want to use normalize whihc is html reset
-@import "normalize";
-// Comment out this import if loading indivual foundation components instead of the whole package
-// Then uncomment @import "vendors/foundation-components"; below under vendor settings
-// Then uncomment specific @imports in that file to load only that code thus optomizing by
-// not loading code not needed.
-@import "foundation";
-
-/* https://github.com/at-import/modular-scale,  http://gakimball.github.io/responsive-modular-scale/ */
-@import "modular-scale"; 
-
-/* https://github.com/heygrady/scss-blend-modes, not needed for color-schemer if not blending colors  */
-/* @import "blend-modes"; */
-
-/* https://github.com/at-import/color-schemer */
-@import "color-schemer"; 
-
-/* compass - uncomment if you need any compass code */
-// @import "compass";
-
-/* END - LOAD VENDOR SCSS STYLESHEETS */
-
- 
-
+/*  
 /*  VENDOR CUSTOM SETTINGS */
-// Uncomment this and comment @import "foundation"; above for loading specific foundation components instead of everything needed or not
-// then uncomment the specific components you need in this file
-// @import "vendors/foundation-components";
-// Edit this to change any of the foundation framework global defaults
+// Load in any sass libraries and packages
+@import 'vendors/packages';
+// Edit this to change any of the foundation framework global defaults - specific changes can be done in a theme
+// although any change there should be noted as a foundation specific setting.
 @import 'vendors/foundation-settings';
 /*  END - VENDOR CUSTOM SETTINGS */ 
 
 /* CUSTOM SASS CODES USED FOR THIS SITE.  */
 //  Commonly useful ones could later be put into a library for use in other sites
+@import 'utils/debug';  // comment out to turn off debugging.
 @import 'utils/functions';
 @import 'utils/mixins';
 @import 'utils/placeholders';
@@ -47,9 +23,9 @@
 
 /* BASE STYLING INCLUDING THE BASE(DEFAULT) THEME  */
 //  The base theme (like all themes) is a package made of a color, component, layout and typography theme
-//  Base styling structure can be overridden by loading  a theme "package"
+//  Base styling structure can be overridden by loading  a theme 'package'
 @import 'base/reset';  // anything outside the base theme that needs to be reset or set before loading the base theme
-@import 'base/theme';  // THE base(default) theme package.  Look inside to see the various pieces
+@import 'base/base-theme';  // THE base(default) theme package.  Look inside to see the various pieces
 /* END - BASE STYLING INCLUDING THE BASE(DEFAULT) THEME  */
 
 /* CUSTOM THEME OVERRIDE  */
@@ -58,6 +34,11 @@
 // @import 'themes/old-fart';
 // @import 'themes/geek-blog';
 /* END - CUSTOM THEME OVERRIDE  */
+
+// DEBUGGING
+// see uitls/_debug.scss  -  comment to turn off debugging
+@include debug($debug-list);  
+
 
 
 
