@@ -1,4 +1,4 @@
   {
     "root": "framework",
-    "sass_root": "framework/scss/base" 
+    "sass_root": "framework/scss/" 
   }
