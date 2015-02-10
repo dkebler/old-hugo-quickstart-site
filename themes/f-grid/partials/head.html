@@ -1,0 +1,13 @@
+{{ partial "head/doctype.html" . }}
+<head>
+  <title>
+    {{ .Title }}{{ if ne .Title .Site.Title }} // {{ .Site.Title }}{{ end }}
+  </title>
+
+  {{ partial "head/meta.html" . }}
+
+  {{ partial "head/og.html" . }}
+
+  {{ partial "head/framework.html" . }}
+
+  </head>

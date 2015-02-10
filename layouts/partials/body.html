@@ -1,21 +1,20 @@
 <body>
+  <div id="page">
+    <!-- Contain for all content -->
+    <!-- {{ partial "body/header.html" . }} -->
 
-	{{ partial "body/header.html" . }}
+
+    <main class="row" data-equalizer>
+      {{ partial "body/content.html" . }} 
+      {{ partial "body/sidebar.html" . }}
+    </main>
 
 
-	<main class="row" data-equalizer>
-	{{ partial "body/content.html" . }}
-	{{ partial "body/sidebar.html" . }}
-	</main>
 
-	{{ partial "body/footer.html" . }}
+<!--     {{ partial "body/footer.html" . }} 
+    {{ partial "body/framework.html" . }} 
+    {{ partial "tools/palette.html" . }} -->
 
-	{{ partial "body/framework.html" . }}
-
- 	{{ partial "tools/palette.html" . }}
+  </div>
 
 </body>
-
-		
-	
-

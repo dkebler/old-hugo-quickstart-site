@@ -4,7 +4,7 @@
 @import 'typography';
 @import 'components';
 @import 'layout';
-@import 'pages';
+@import 'pages'; //needs to be last so specific page formats will override
 
 
 /* End - Base Theme */

@@ -9499,6 +9499,43 @@ th.hide-for-touch {
 /* CUSTOM SASS CODES USED FOR THIS SITE.  */
 /* END - CUSTOM SASS CODES USED FOR THIS SITE.  */
 /* BASE STYLING INCLUDING THE BASE(DEFAULT) THEME  */
+/*  Base Theme  */
+/* line 11, ../../../framework/scss/utils/_mixins.scss */
+body {
+  background: #5380b5;
+  color: white;
+}
+
+/* line 11, ../../../framework/scss/utils/_mixins.scss */
+main {
+  background: #53b599;
+  color: black;
+}
+
+/* line 11, ../../../framework/scss/utils/_mixins.scss */
+aside {
+  background: #204d82;
+  color: white;
+}
+
+/* line 11, ../../../framework/scss/utils/_mixins.scss */
+article {
+  background: #a9bfda;
+  color: black;
+}
+
+/* line 1, ../../../framework/scss/base/layout/_header.scss */
+header {
+  background: linear-gradient(to left, rgba(54, 194, 182, 0.96) 0, rgba(62, 188, 207, 0.96) 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* End - Base Theme */
 /* END - BASE STYLING INCLUDING THE BASE(DEFAULT) THEME  */
 /* CUSTOM THEME OVERRIDE  */
 /* END - CUSTOM THEME OVERRIDE  */
