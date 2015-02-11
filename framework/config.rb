@@ -5,6 +5,7 @@ add_import_path "packages/scss-blend-modes/stylesheets"
 add_import_path "packages/color-schemer/stylesheets"
 add_import_path "packages/normalize.scss"
 add_import_path "packages/sass-font-stacker"
+add_import_path "packages/sass-flex-mixin"
 
 
 

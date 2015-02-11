@@ -7,8 +7,8 @@
 // Then uncomment @import 'vendors/foundation-components'; below under vendor settings
 // Then uncomment specific @imports in that file to load only that code thus 
 // optimizing by not loading code not needed.
-@import 'foundation';
-// @import 'vendors/foundation-components';
+//@import 'foundation';
+@import 'foundation-components';
 
 /* https://github.com/at-import/modular-scale,  http://gakimball.github.io/responsive-modular-scale/ */
 @import 'modular-scale'; 
@@ -26,3 +26,4 @@
 // @import 'compass';
 
 /* END - LOAD VENDOR SCSS STYLESHEETS */
+
