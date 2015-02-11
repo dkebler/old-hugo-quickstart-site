@@ -1,1 +1,1 @@
-A complete Hugo/Foundation based website that can be cloned and customized 
+A complete Hugo based website that can be cloned and customized 
