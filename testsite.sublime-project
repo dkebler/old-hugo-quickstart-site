@@ -3,7 +3,12 @@
 	[
 		{
 			"follow_symlinks": true,
-			"path": "/mnt/AllData/DGK/hacking/hugosites/testsite"
+			"path": "/mnt/AllData/DGK/hacking/hugosites/testsite",
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/mnt/AllData/DGK/hacking/hugosites/tmp",
 		}
+
 	]
 }

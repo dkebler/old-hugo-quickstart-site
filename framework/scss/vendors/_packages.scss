@@ -1,29 +1,28 @@
 /* LOAD VENDOR SCSS STYLESHEETS FROM BOWER INSTALLS */
 
-// Comment out this import if you don't want to use normalize which is a html reset
-@import 'normalize';
-
 // Comment out @import 'foundation'; if loading individual foundation components instead of the whole package
 // Then uncomment @import 'vendors/foundation-components'; below under vendor settings
 // Then uncomment specific @imports in that file to load only that code thus 
 // optimizing by not loading code not needed.
 //@import 'foundation';
-@import 'foundation-components';
+//@import 'foundation-components';
 
 /* https://github.com/at-import/modular-scale,  http://gakimball.github.io/responsive-modular-scale/ */
-@import 'modular-scale'; 
+@import 'modular-scale';
 
 /* https://github.com/heygrady/scss-blend-modes, not needed for color-schemer if not blending colors  */
 /* @import 'blend-modes'; */
 
 /* https://github.com/at-import/color-schemer */
-@import 'color-schemer'; 
+@import 'color-schemer';
 
 /* https://github.com/synapticism/sass-font-stacker */
-@import 'font-stacker'; 
+@import 'font-stacker';
 
 /* compass - uncomment if you need any compass code */
 // @import 'compass';
 
-/* END - LOAD VENDOR SCSS STYLESHEETS */
+// Comment out this import if you don't want to use normalize which is a html reset
+@import 'normalize';
 
+/* END - LOAD VENDOR SCSS STYLESHEETS */

@@ -1,84 +1,18 @@
 /*
-Error: File to import not found or unreadable: foundation/components/grid-5.
-       Load paths:
-         /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/foundation/scss
-         /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/modular-scale/stylesheets
-         /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/scss-blend-modes/stylesheets
-         /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/color-schemer/stylesheets
-         /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/normalize.scss
-         /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/sass-font-stacker
-         Compass::SpriteImporter
-         /mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss
-         /var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets
-        on line 12 of /mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss/vendors/_foundation-components.scss
-        from line 11 of /mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss/vendors/_packages.scss
-        from line 18 of /mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss/sitestyle.scss
+Sass::SyntaxError: "input[type="submit"]" failed to @extend "%button".
+The selector "%button" was not found.
+Use "@extend %button !optional" if the extend should be able to fail.
 
-7: 
-8: ////
-9: /// This is a poster comment.
-10: /// It will apply annotations to all items from file.
-11: /// @group API
-12: /// @author Hugo Giraudel
-13: ////
-14: 
-15: /*  
-16: /*  VENDOR CUSTOM SETTINGS *\/
-17: // Load in any sass libraries and packages
 
 Backtrace:
-/mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss/vendors/_foundation-components.scss:12
-/mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss/vendors/_packages.scss:11
-/mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss/sitestyle.scss:18
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/import_node.rb:45:in `import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/import_node.rb:28:in `imported_file'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/import_node.rb:37:in `css_import?'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:325:in `map'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:88:in `block in with_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:88:in `with_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:325:in `map'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:88:in `block in with_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:88:in `with_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:52:in `map'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/root_node.rb:36:in `css_tree'
+/mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss/base/components/_buttons.scss:5
+/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/extend.rb:61:in `block in check_extends_fired!'
+/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/util/subset_map.rb:106:in `block in each_value'
+/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/util/subset_map.rb:106:in `each'
+/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/util/subset_map.rb:106:in `each_value'
+/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/extend.rb:50:in `check_extends_fired!'
+/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/extend.rb:16:in `visit'
+/var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/root_node.rb:39:in `css_tree'
 /var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
 /var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/engine.rb:368:in `_render_with_sourcemap'
 /var/lib/gems/2.1.0/gems/sass-3.4.10/lib/sass/engine.rb:286:in `block in render_with_sourcemap'
@@ -101,4 +35,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: foundation/components/grid-5.\A        Load paths:\A          /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/foundation/scss\A          /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/modular-scale/stylesheets\A          /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/scss-blend-modes/stylesheets\A          /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/color-schemer/stylesheets\A          /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/normalize.scss\A          /mnt/AllData/DGK/hacking/hugosites/testsite/framework/packages/sass-font-stacker\A          Compass::SpriteImporter\A          /mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss\A          /var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets\A         on line 12 of /mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss/vendors/_foundation-components.scss\A         from line 11 of /mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss/vendors/_packages.scss\A         from line 18 of /mnt/AllData/DGK/hacking/hugosites/testsite/framework/scss/sitestyle.scss\A \A 7: \A 8: ////\A 9: /// This is a poster comment.\A 10: /// It will apply annotations to all items from file.\A 11: /// @group API\A 12: /// @author Hugo Giraudel\A 13: ////\A 14: \A 15: /*  \A 16: /*  VENDOR CUSTOM SETTINGS */\A 17: // Load in any sass libraries and packages"; }
+  content: "Sass::SyntaxError: \"input[type=\"submit\"]\" failed to @extend \"%button\".\A The selector \"%button\" was not found.\A Use \"@extend %button !optional\" if the extend should be able to fail.\A "; }

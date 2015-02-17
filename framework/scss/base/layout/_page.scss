@@ -1,7 +1,11 @@
 // default for the entire webpage which can be overriden by any of the specific layout files
 // Set the container for the page
 .page {
+	display: block;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
 	
 }
 // First Set the default row width
-@import '../test';
+// @import '  ../test';
