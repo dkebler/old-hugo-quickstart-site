@@ -1,9 +1,10 @@
-  <article class="small-12 medium-9 push-3 columns content" data-equalizer-watch>
-  	<time>{{ .Date.Format "January, 2006" }}</time>
-    <div id="title">{{ .Title }}</div>
-    <div id="subtitle">{{ .Params.subtitle }}</div>
+<section id="content">
+    <h2> A Heading for content section</h2>
+    <article data-lorem="10p">
+    <time>{{ .Date.Format "January, 2006" }}</time>
+    <div id="article__title">{{ .Title }}</div>
+    <div id="article__subtitle">{{ .Params.subtitle }}</div>
         {{ .Content }}
-   </article>   
+   </article>  
+</section>
 
-
-   

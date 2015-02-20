@@ -1,18 +1,13 @@
 <body>
-  <div id="page">
-    <!-- Contain for all content -->
     {{ partial "body/header.html" . }}
 
+  <div id=page>
 
-    <main>
-      {{ partial "body/content.html" . }} 
-      {{ partial "body/sidebar.html" . }}
-    </main>
-
-<!--     {{ partial "body/footer.html" . }} 
-    {{ partial "body/framework.html" . }} 
-    {{ partial "tools/palette.html" . }} -->
-
-  </div>
+     {{ partial "body/topbar.html" . }} 
+     {{ partial "body/main.html" . }}
+ 
+  </div>    <!-- close of #page div --> 
+   {{ partial "body/footer.html" . }} 
+ 
 
 </body>

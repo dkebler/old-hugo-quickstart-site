@@ -1,0 +1,13 @@
+{
+  "name": "hugo-quickstart-site",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+  },
+  "install": {
+    "path": {
+      "css": "../static/framework/css",
+      "js": "../static/framework/js"
+    }
+  }
+}
