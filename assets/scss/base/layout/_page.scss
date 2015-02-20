@@ -1,11 +1,14 @@
 // default for the entire webpage which can be overriden by any of the specific layout files
 // Set the container for the page
-.page {
-	display: block;
-	position: fixed;
-	width: 100%;
-	z-index: 1000;
-	
+
+// color set in @import('../colors')
+body{
+  margin:0;
+  padding:0;
 }
-// First Set the default row width
-// @import '  ../test';
+
+.rollover-wrapper { 
+  position:relative;
+  z-index:10;
+  margin: 200px auto 150px auto;
+}

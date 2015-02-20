@@ -2,12 +2,14 @@
   "name": "hugo-quickstart-site",
   "version": "0.0.1",
   "private": "true",
-  "dependencies": {
-  },
+  "dependencies": {},
   "install": {
     "path": {
       "css": "../static/framework/css",
       "js": "../static/framework/js"
     }
+  },
+  "devDependencies": {
+    "breakpoint-sass": "~2.5.0"
   }
 }

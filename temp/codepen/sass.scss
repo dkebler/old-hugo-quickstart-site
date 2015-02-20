@@ -1,53 +1,53 @@
-/* http://www.crockford.com/wrrrld/color.html */
-$pickacolor:forestgreen;
+// /* http://www.crockford.com/wrrrld/color.html */
+// $pickacolor:forestgreen;
 
-$base-bg-color: hsl(hue($pickacolor), 50%, 50%);
-$base-text-color: oldlace;
-$header-bg-color: shade($base-bg-color, 80%);
-$page-bg-color: tint($base-bg-color, 70%);
-$page-text-color: shade($base-bg-color, 80%);
+// $base-bg-color: hsl(hue($pickacolor), 50%, 50%);
+// $base-text-color: oldlace;
+// $header-bg-color: shade($base-bg-color, 80%);
+// $page-bg-color: tint($base-bg-color, 70%);
+// $page-text-color: shade($base-bg-color, 80%);
 
-$topbar-bg-color: shade($base-bg-color, 50%);
-$topbar-text-color: oldlace;
-$topbar-height: 4em;
-$footer-bg-color: shade($base-bg-color, 70%);
-$footer-text-color: $base-text-color;
+// $topbar-bg-color: shade($base-bg-color, 50%);
+// $topbar-text-color: oldlace;
+// $topbar-height: 4em;
+// $footer-bg-color: shade($base-bg-color, 70%);
+// $footer-text-color: $base-text-color;
 
-$box-bg-color: tint($base-bg-color, 50%);
+// $box-bg-color: tint($base-bg-color, 50%);
 
-.box {
-  padding: 1em;
-  background: $box-bg-color;
-  margin: 1em;
-}
-
-
-body{
-  background: $base-bg-color;
-  color:$base-text-color;
-  margin:0;
-  padding:0;
-}
+// .box {
+//   padding: 1em;
+//   background: $box-bg-color;
+//   margin: 1em;
+// }
 
 
-header {
-  position:fixed;
-  top:0;
-  z-index:1;
-  height:200px;
-  background: $header-bg-color;
-  width:100%;
-  margin: 0;
-  padding:0;
-}
+// body{
+//   background: $base-bg-color;
+//   color:$base-text-color;
+//   margin:0;
+//   padding:0;
+// }
 
-#page { 
-  position:relative;
-  background: $page-bg-color;
-  color: $page-text-color;
-  z-index:10;
-  margin: 200px auto 150px auto;
-}
+
+// header {
+//   position:fixed;
+//   top:0;
+//   z-index:1;
+//   height:200px;
+//   background: $header-bg-color;
+//   width:100%;
+//   margin: 0;
+//   padding:0;
+// }
+
+// #page { 
+//   position:relative;
+//   background: $page-bg-color;
+//   color: $page-text-color;
+//   z-index:10;
+//   margin: 200px auto 150px auto;
+// }
 
 
 

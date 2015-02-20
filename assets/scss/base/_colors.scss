@@ -1,29 +1,107 @@
-// Pick a color for your scheme:  see paletton.com
-$picked-color: #275183;
-// Adjust sat/lightness of the hue of picked color
-$cs-primary: hsl(hue($picked-color), 60%, 40%);
+// see paletton.com and color-schemer
+
+$picked-color: #275183; // Pick a color for your scheme:  
+$cs-primary: hsl(hue($picked-color), 60%, 40%); // Adjust sat/lightness of the hue of picked color
+
 // Select your scheme from the list 
 $cs-scheme: accented-analogic; // mono, complement, triad, tetrad, analogic, accented-analogic
-// How distant do you want the hue offset to be:
-$cs-hue-offset: 30;
-// How distant do you want tints and shades to be from their base:
-$cs-brightness-offset: 0;
-$cs-color-model: ryb; // rgb, ryb
+$cs-hue-offset: 30; // How degrees distant do you want the hue offsets to be:
+$cs-brightness-offset: 0;  // How distant do you want tints and shades to be from their base:
+$cs-color-model: ryb; // which model rgb, ryb
 
-//  Generate set of your four main colors based on the settings above
+//  Generate set of your four main colors based on the settings above, 
+//  see  @import('../../packages/color-schemer/stylesheets/color-schemer')
 $primary : cs-primary();
 $secondary : cs-secondary();
 $tertiary : cs-tertiary();
 $quadrary : cs-quadrary();
 
-$ts-offset: 20%;  //increment amount to shift tint or shade of a color 
+$ts-offset: 10%;  //increment amount to shift tint or shade of a color 
 
-// Set the main html element here  http://www.w3schools.com/html/html5_new_elements.asp
-// Set other selectors in the coressponding layout files
-@include selector-colors(body, $primary);
-@include selector-colors(main, $tertiary);
-@include selector-colors(aside, $primary, -1);
-@include selector-colors(article, $primary, 3);
+/////////////////////////////////////
+// Colors Set here together for convenience but can be reset 
+// in any partial.  See layout partial for where color gets set in selector
+//////////////////////////////////////
+
+$text-color-dark: black;
+$text-color-light: white;
+
+// layout elements
+$body-bg-color: ts-color($primary,4);
+$header-bg-color: ts-color($primary,-6);
+$topbar-bg-color: ts-color($primary,-8);
+$main-bg-color: ts-color($primary,8);
+$sidebar-bg-color: ts-color($primary,6);
+$content-bg-color: ts-color($primary,8);
+$footer-bg-color: ts-color($primary,-6);
+
+// components
+$footer-bg-color: ts-color($primary,-6);
+
+
+
+
+
+
+
+// Layout Elements Color Settings - mixin sets a contrasting text color
+// see @import('../utils/mixins')
+// Can be overriden in the corresponding layout if need be.
+// @include selector-colors(body, $body-bg-color);
+// @include selector-colors('#topbar', $tertiary);
+// @include selector-colors(main, $tertiary);
+// @include selector-colors(aside, $primary, -1);   //  @import('layout/main/sidebar')
+// @include selector-colors('#content', $primary, 3); //  @import('layout/main/content')
+// @include selector-colors(footer, $primary, 3);
+
+// // Other elements
+// @include selector-colors('.box', $primary, 3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // $debug-list: join($debug-list, '---LOCATION-base/_color.scss:27'); 
 // $debug-list: join($debug-list, ());

@@ -1,13 +1,14 @@
 <body>
     {{ partial "body/header.html" . }}
 
-  <div id=page>
+    <div class="rollover-wrapper">
 
-     {{ partial "body/topbar.html" . }} 
-     {{ partial "body/main.html" . }}
- 
-  </div>    <!-- close of #page div --> 
-   {{ partial "body/footer.html" . }} 
- 
+        {{ partial "body/topbar.html" . }} 
+        {{ partial "body/main.html" . }}
+
+    </div>
+
+    <!-- close of #page div -->
+    {{ partial "body/footer.html" . }}
 
 </body>

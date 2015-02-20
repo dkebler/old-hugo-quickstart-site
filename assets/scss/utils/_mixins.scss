@@ -2,6 +2,8 @@
 /// @author   David Kebler
 // COLOR
 /// set a background and text color  $type
+
+
 @mixin selector-colors($selector-name, $color, $offset-factor: 1, $grad: false) {
   @if $offset-factor > 0 {
     $color: tint($color, $ts-offset * $offset-factor);
@@ -16,6 +18,22 @@
     {color: black;}
   }
 }
+
+
+@mixin color-set($color, $offset-factor: 1, $grad: false) {
+  @if $offset-factor > 0 {
+    $color: tint($color, $ts-offset * $offset-factor);
+  }  @else 
+  { $color: shade($color, -1 * $ts-offset * $offset-factor);}
+
+  background: $color;
+    @if cs-is-dark($color) == true {
+      color: white;
+    } @else 
+    {color: black;}
+}
+
+
 
 
 /// BUTTONS

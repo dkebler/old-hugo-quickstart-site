@@ -1,5 +1,5 @@
 #!/bin/bash
-cd $PWD/framework
+cd $PWD/assets
 pwd
 compass watch
 read $1
