@@ -1,6 +1,10 @@
 baseurl = "http://localhost:1313"
 languageCode = "en-us"
-title = "A Hugo, Sass and Zurb-Foundation Starter Site"
+title = "Hugo Complete Starter Website"
+[params]
+  site-description = "Blah Blah"
+  site-creator= "David Kebler"
+  sidebartitle="This is the Sidebar"
 [taxonomies]
   tag = "tags"
   category = "categories"
@@ -10,8 +14,6 @@ title = "A Hugo, Sass and Zurb-Foundation Starter Site"
     name = "about this site"
     weight = -110
     identifier = "about"
- [params]   
-    sidebartitle="This is the Sidebar"
 [[menu.social]]
     name = "Facebook"
     url = "www.facebook.com"

@@ -1,44 +1,16 @@
-<aside class="small-12 medium-3 pull-9 columns sidebar" data-equalizer-watch>
-<p>Article Tags</p>
-      {{ partial "taxonomies/page-tags.html" . }}
-     </aside>
+<aside class="sidebar">
+    <div id="tag__cloud" class="box">Tag Cloud </div>
+    <div id="tag__article" class="box">Page Tag</div>
+    <div id="sidebar__nav" class="box">Extra Nav</div>
+    <div id="notices" class="box">Notices</div>
+</aside>
 
 
 
 
-<!-- <aside class="sidebar" data-equalizer-watch>
-    {{ if .Site.Params.sidebartitle }}<h1 class="brand-title">{{ .Site.Params.sidebartitle }}</h1>{{ end }}
-    {{ if .Site.Params.sidebartagline }}<h2 class="brand-tagline">{{ .Site.Params.sidebartagline }}</h2>{{ end }}
-
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item"><span class="nav-item-separator">//</span><a href="{{ .Site.BaseUrl }}">Home</a></li>
-        {{ range .Site.Menus.main }}
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="{{ .Url }}">{{ .Name }}</a></li>
-        {{ end }}
-      </ul>
-    </nav>
-
-        {{ range .Site.Sections }}
-          <li><p>Some URL</p></li>
-          {{ end }} 
 
 
-   {{ partial "body/socialsharing.html" . }}      
 
-    <p>some text</p>
-
-
-    {{ if .Site.Menus.social }}
-    <div class="social-buttons">
-      {{ range .Site.Menus.social }}
-        {{ if .Url }}
-        <a href="{{ .Url }}" target="_blank">Icon{{ .Pre }}</a>
-        {{ end }}
-      {{ end }}
-      
-    </div>
-    {{ end }} -->
 
 
 

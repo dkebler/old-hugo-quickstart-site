@@ -1,11 +1,18 @@
 # Require any additional compass plugins here.
 # add_import_path "packages/foundation/scss"
-add_import_path "packages/modular-scale/stylesheets"
+
 # add_import_path "packages/scss-blend-modes/stylesheets"
+
 add_import_path "packages/color-schemer/stylesheets"
 add_import_path "packages/normalize.scss"
 add_import_path "packages/sass-font-stacker"
 add_import_path "packages/sass-flex-mixin"
+add_import_path "packages/susy/sass"
+add_import_path "packages/Buttons/scss"
+add_import_path "packages/breakpoint-sass/stylesheets"
+add_import_path "packages/breakpoint-slicer/stylesheets"
+add_import_path "packages/sassy-maps/sass"
+add_import_path "packages/modular-scale/stylesheets"
 
 
 

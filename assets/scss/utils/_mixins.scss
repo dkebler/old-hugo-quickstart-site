@@ -3,38 +3,37 @@
 // COLOR
 /// set a background and text color  $type
 
-
 @mixin selector-colors($selector-name, $color, $offset-factor: 1, $grad: false) {
   @if $offset-factor > 0 {
     $color: tint($color, $ts-offset * $offset-factor);
-  }  @else 
-  {$color: shade($color, -1 * $ts-offset * $offset-factor);}
-
+  }
+  @else {
+    $color: shade($color, -1 * $ts-offset * $offset-factor);
+  }
   #{$selector-name} {
     background: $color;
     @if cs-is-dark($color) == true {
-      color: white;
-    } @else 
-    {color: black;}
+      color: $text-color-light;
+    }
+    @else {
+      color: $text-color-dark;
+    }
   }
 }
-
 
 @mixin color-set($color, $offset-factor: 1, $grad: false) {
   @if $offset-factor > 0 {
     $color: tint($color, $ts-offset * $offset-factor);
-  }  @else 
-  { $color: shade($color, -1 * $ts-offset * $offset-factor);}
-
+  } @else {
+    $color: shade($color, -1 * $ts-offset * $offset-factor);
+  }
   background: $color;
-    @if cs-is-dark($color) == true {
-      color: white;
-    } @else 
-    {color: black;}
+  @if cs-is-dark($color) == true {
+    color: $text-color-light;
+  } @else {
+    color: $text-color-dark;
+  }
 }
-
-
-
 
 /// BUTTONS
 // http://thecodingdesigner.com/journal/balancing-ideal-sass-and-ideal-css
@@ -63,17 +62,16 @@
     color: adjust-color($button-color, $lightness: -10%);
   };
   text-shadow: adjust-color($button-color, $lightness: 15%) 1px 1px 0;
-
+  
   &:hover {
     background: {
       color: adjust-color($button-color, $lightness: 5%);
     };
   }
-
+  
   &:active {
     background: {
       color: adjust-color($button-color, $lightness: 10%);
     };
   }
 }
-

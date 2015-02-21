@@ -30,13 +30,14 @@ $text-color-light: white;
 $body-bg-color: ts-color($primary,4);
 $header-bg-color: ts-color($primary,-6);
 $topbar-bg-color: ts-color($primary,-8);
-$main-bg-color: ts-color($primary,8);
+$main-bg-color: ts-color($tertiary,-4);
 $sidebar-bg-color: ts-color($primary,6);
 $content-bg-color: ts-color($primary,8);
 $footer-bg-color: ts-color($primary,-6);
 
 // components
-$footer-bg-color: ts-color($primary,-6);
+$box-bg-color: ts-color($quadrary,-6);
+$tags-bg-color: ts-color($quadrary,1);
 
 
 

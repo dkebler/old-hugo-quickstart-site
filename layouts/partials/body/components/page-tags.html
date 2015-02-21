@@ -1,6 +1,6 @@
        {{ $baseurl := .Site.BaseUrl }}
-        <ul id="tags">
+        <ul class="tags">
           {{ range .Params.tags }}
-            <li> <a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a> </li>
+            <li class="button button-rounded button-small"> <a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a> </li>
           {{ end }}
         </ul>

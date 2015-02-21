@@ -1,0 +1,15 @@
+// stytling for document taxonomy tags for a page or tag cloud
+
+.tags > li {
+@include color-set($tags-bg-color);
+
+a {
+@include color-set($tags-bg-color);
+}
+
+&:hover, a:hover {
+@include color-set($tags-bg-color,4);
+}
+
+}
+

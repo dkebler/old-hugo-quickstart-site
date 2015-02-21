@@ -1,14 +1,14 @@
 // default for the entire webpage which can be overriden by any of the specific layout files
 // Set the container for the page
 
-// color set in @import('../colors')
-body{
-  margin:0;
-  padding:0;
+body {
+  @include color-set($body-bg-color);
+  margin: 0;
+  padding: 0;
 }
 
-.rollover-wrapper { 
-  position:relative;
-  z-index:10;
-  margin: 200px auto 150px auto;
+.rollover-wrapper {
+  position: relative;
+  z-index: 10;
+  margin: 200px auto 0;
 }

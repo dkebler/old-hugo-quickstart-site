@@ -1,11 +1,22 @@
 /* LOAD VENDOR SCSS STYLESHEETS FROM BOWER INSTALLS */
 
-// Comment out @import 'foundation'; if loading individual foundation components instead of the whole package
-// Then uncomment @import 'vendors/foundation-components'; below under vendor settings
-// Then uncomment specific @imports in that file to load only that code thus 
-// optimizing by not loading code not needed.
 //@import 'foundation';
 //@import 'foundation-components';
+
+// http
+@import 'sassy-maps';
+
+// http
+@import 'susy';
+
+// http
+@import 'breakpoint';
+
+// http
+@import 'breakpoint-slicer';
+
+// https://github.com/alexwolfe/Buttons
+@import 'buttons';
 
 /* https://github.com/at-import/modular-scale,  http://gakimball.github.io/responsive-modular-scale/ */
 @import 'modular-scale';
@@ -19,10 +30,10 @@
 /* https://github.com/synapticism/sass-font-stacker */
 @import 'font-stacker';
 
+// http
+@import 'normalize';
+
 /* compass - uncomment if you need any compass code */
 // @import 'compass';
-
-// Comment out this import if you don't want to use normalize which is a html reset
-@import 'normalize';
 
 /* END - LOAD VENDOR SCSS STYLESHEETS */
