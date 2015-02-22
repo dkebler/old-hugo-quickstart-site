@@ -6,26 +6,26 @@ $topbar-height: 4em;
   align-items: center;
   justify-content: space-around;
   height: $topbar-height;
-  font-size: 1em;
+  padding: 0 $page-gutter;
 }
 
 #topbar__sitename {
-  flex: 1;
+  flex: 1 1;
   @include color-set($topbar-bg-color,1);
 }
 
 #topbar__nav {
-  flex: 2;
+  flex: 2 2;
   @include color-set($topbar-bg-color,2);
   }
 
 #topbar__search {
-  flex: 1;
+  flex: 1 1;
   @include color-set($topbar-bg-color,3);
 }
 
 
 #topbar__language{
- flex: 1;
+ flex: 1 1;
   @include color-set($topbar-bg-color,4);
 }

@@ -2444,47 +2444,6 @@ th {
 /* END - LOAD VENDOR SCSS STYLESHEETS */
 /*  END - VENDOR CUSTOM SETTINGS */
 /* CUSTOM SASS CODES USED FOR THIS SITE.  */
-/* line 4, ../../../assets/scss/utils/_placeholders.scss */
-.cta input[type="submit"], input[type="submit"], input[type="reset"], button {
-  border-radius: 0.2em;
-  border-width: 1px;
-  border-style: solid;
-  font-family: sans-serif;
-  font-weight: normal;
-  font-size: 0.9rem;
-  line-height: 1.25;
-  text-transform: uppercase;
-  padding: 0.2em 0.5em;
-  color: #2d2d2d;
-  background-color: #ececec;
-  border-color: lightgray;
-  text-shadow: white 1px 1px 0;
-}
-/* line 66, ../../../assets/scss/utils/_mixins.scss */
-input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
-  background-color: #f9f9f9;
-}
-/* line 72, ../../../assets/scss/utils/_mixins.scss */
-input[type="submit"]:active, input[type="reset"]:active, button:active {
-  background-color: white;
-}
-
-/* line 8, ../../../assets/scss/utils/_placeholders.scss */
-.cta input[type="submit"] {
-  color: #2d2d2d;
-  background-color: #bada55;
-  border-color: #a8cf2d;
-  text-shadow: #d3e894 1px 1px 0;
-}
-/* line 66, ../../../assets/scss/utils/_mixins.scss */
-.cta input[type="submit"]:hover {
-  background-color: #c2df6a;
-}
-/* line 72, ../../../assets/scss/utils/_mixins.scss */
-.cta input[type="submit"]:active {
-  background-color: #cbe37f;
-}
-
 /* END - CUSTOM SASS CODES USED FOR THIS SITE.  */
 /* BASE STYLING INCLUDING THE BASE(DEFAULT) THEME  */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -2910,61 +2869,6 @@ body {
   margin: 1em;
 }
 
-@media (min-width: 32em) {
-  /* line 10, ../../../assets/scss/base/components/_buttons.scss */
-  button {
-    border-radius: 0.2em;
-    border-width: 1px;
-    border-style: solid;
-    font-family: sans-serif;
-    font-weight: normal;
-    font-size: 0.9rem;
-    line-height: 1.25;
-    text-transform: uppercase;
-    padding: 0.2em 0.5em;
-    color: #2d2d2d;
-    background-color: #c0ffee;
-    border-color: #8dffe0;
-    text-shadow: white 1px 1px 0;
-  }
-  /* line 66, ../../../assets/scss/utils/_mixins.scss */
-  button:hover {
-    background-color: #dafff5;
-  }
-  /* line 72, ../../../assets/scss/utils/_mixins.scss */
-  button:active {
-    background-color: #f3fffc;
-  }
-}
-
-@media (min-width: 32em) {
-  /* line 18, ../../../assets/scss/base/components/_buttons.scss */
-  .cta {
-    border-radius: 0.2em;
-    border-width: 1px;
-    border-style: solid;
-    font-family: sans-serif;
-    font-weight: normal;
-    font-size: 0.9rem;
-    line-height: 1.25;
-    text-transform: uppercase;
-    padding: 0.2em 0.5em;
-    color: #2d2d2d;
-    background-color: #c0ffee;
-    border-color: #8dffe0;
-    text-shadow: white 1px 1px 0;
-    width: 100%;
-  }
-  /* line 66, ../../../assets/scss/utils/_mixins.scss */
-  .cta:hover {
-    background-color: #dafff5;
-  }
-  /* line 72, ../../../assets/scss/utils/_mixins.scss */
-  .cta:active {
-    background-color: #f3fffc;
-  }
-}
-
 /* line 1, ../../../assets/scss/base/components/_media.scss */
 .figure--center {
   display: flex;
@@ -3022,23 +2926,30 @@ nav > ul > li > a > div > span {
   max-width: 260px;
 }
 
-/* line 3, ../../../assets/scss/base/components/_tags.scss */
-.tags > li {
+/* line 4, ../../../assets/scss/base/components/_tags.scss */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* line 13, ../../../assets/scss/base/components/_tags.scss */
+.tag {
   background: #b48d51;
   color: black;
+  border: 0.094em solid color-set(#ac813e, -5);
+  border-radius: .625em;
+  padding: 0.3em;
+  margin: 0.2em;
 }
-/* line 6, ../../../assets/scss/base/components/_tags.scss */
-.tags > li a {
-  background: #b48d51;
-  color: black;
-}
-/* line 10, ../../../assets/scss/base/components/_tags.scss */
-.tags > li:hover, .tags > li a:hover {
+/* line 17, ../../../assets/scss/base/components/_tags.scss */
+.tag:hover {
   background: #cdb38b;
   color: black;
 }
 
-/* line 4, ../../../assets/scss/base/layout/_page.scss */
+/* line 7, ../../../assets/scss/base/layout/_page.scss */
 body {
   background: #8aa9cc;
   color: black;
@@ -3046,7 +2957,7 @@ body {
   padding: 0;
 }
 
-/* line 10, ../../../assets/scss/base/layout/_page.scss */
+/* line 13, ../../../assets/scss/base/layout/_page.scss */
 .rollover-wrapper {
   position: relative;
   z-index: 10;
@@ -3074,33 +2985,33 @@ header {
   align-items: center;
   justify-content: space-around;
   height: 4em;
-  font-size: 1em;
+  padding: 0 10em;
 }
 
 /* line 12, ../../../assets/scss/base/layout/_topbar.scss */
 #topbar__sitename {
-  flex: 1;
+  flex: 1 1;
   background: #202a36;
   color: white;
 }
 
 /* line 17, ../../../assets/scss/base/layout/_topbar.scss */
 #topbar__nav {
-  flex: 2;
+  flex: 2 2;
   background: #39424c;
   color: white;
 }
 
 /* line 22, ../../../assets/scss/base/layout/_topbar.scss */
 #topbar__search {
-  flex: 1;
+  flex: 1 1;
   background: #525962;
   color: white;
 }
 
 /* line 28, ../../../assets/scss/base/layout/_topbar.scss */
 #topbar__language {
-  flex: 1;
+  flex: 1 1;
   background: #6a7179;
   color: white;
 }
@@ -3110,7 +3021,7 @@ main {
   background: #2f705d;
   color: white;
   width: 100%;
-  padding: 0 5em;
+  padding: 0 15em;
 }
 
 /* line 7, ../../../assets/scss/base/layout/_main.scss */
@@ -3136,7 +3047,7 @@ main {
 @media (min-width: 768px) {
   /* line 7, ../../../assets/scss/base/layout/main/_content.scss */
   #content {
-    flex: 0 0 50em;
+    flex: 2;
   }
 }
 /* line 1, ../../../assets/scss/base/layout/main/_sidebar.scss */
@@ -3144,39 +3055,40 @@ aside, .sidebar {
   background: #b1c5dd;
   color: black;
   order: -1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
 }
 
-/* line 9, ../../../assets/scss/base/layout/main/_sidebar.scss */
+/* line 10, ../../../assets/scss/base/layout/main/_sidebar.scss */
 .sidebar .box {
   background: #c2d2e5;
   color: black;
 }
 
-/* line 13, ../../../assets/scss/base/layout/main/_sidebar.scss */
+/* line 14, ../../../assets/scss/base/layout/main/_sidebar.scss */
 #tag__cloud {
   flex: 0;
 }
 
-/* line 17, ../../../assets/scss/base/layout/main/_sidebar.scss */
+/* line 18, ../../../assets/scss/base/layout/main/_sidebar.scss */
 #tag__article {
   flex: 0;
 }
 
-/* line 21, ../../../assets/scss/base/layout/main/_sidebar.scss */
+/* line 22, ../../../assets/scss/base/layout/main/_sidebar.scss */
 #sidebar__nav {
   flex: 0;
 }
 
-/* line 25, ../../../assets/scss/base/layout/main/_sidebar.scss */
+/* line 26, ../../../assets/scss/base/layout/main/_sidebar.scss */
 #notices {
   flex: 0 0 20%;
 }
 
 @media (min-width: 768px) {
-  /* line 30, ../../../assets/scss/base/layout/main/_sidebar.scss */
+  /* line 31, ../../../assets/scss/base/layout/main/_sidebar.scss */
   aside {
     /* 12em is the width of the columns */
     flex: 1;
@@ -3187,7 +3099,7 @@ footer {
   background: #273b54;
   color: white;
   width: 100%;
-  padding: 2em 5em;
+  padding: 2em 10em;
 }
 
 /* End - Base Theme */
